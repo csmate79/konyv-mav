@@ -18,6 +18,12 @@
         </developer>
     </developers>
 
+    <scm>
+        <url>https://github.com/erik363/WeatherSWE</url>
+        <connection>scm:git:git://github.com/erik363/WeatherSWE.git</connection>
+        <developerConnection>scm:git:git@github.com/erik363/WeatherSWE.git</developerConnection>
+    </scm>
+
     <dependencies>
         <dependency>
             <groupId>com.jfoenix</groupId>
