@@ -19,9 +19,9 @@
     </developers>
 
     <scm>
-        <url>https://github.com/erik363/WeatherSWE</url>
-        <connection>scm:git:git://github.com/erik363/WeatherSWE.git</connection>
-        <developerConnection>scm:git:git@github.com/erik363/WeatherSWE.git</developerConnection>
+        <url>https://github.com/csmate79/konyv-mav</url>
+        <connection>scm:git:git://github.com/csmate79/konyv-mav.git</connection>
+        <developerConnection>scm:git:git@github.com/csmate79/konyv-mav.git</developerConnection>
     </scm>
 
     <dependencies>
@@ -30,7 +30,6 @@
             <artifactId>jfoenix</artifactId>
             <version>8.0.8</version>
         </dependency>
-
         <dependency>
             <groupId>org.apache.derby</groupId>
             <artifactId>derby</artifactId>
