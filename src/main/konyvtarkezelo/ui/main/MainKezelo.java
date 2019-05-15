@@ -33,6 +33,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import konyvtar.database.AdatbazisKezelo;
+import konyvtarkezelo.ui.belepes.BelepesKezelo;
 
 /**
  * FXML Controller class
@@ -208,12 +209,14 @@ public class MainKezelo implements Initializable {
                 alert1.setHeaderText(null);
                 alert1.setContentText("A könyv kiadása megtörtént");
                 alert1.showAndWait();
+                Logger.getLogger(MainKezelo.class.getName()).log(Level.INFO, "Sikerült lekérdezni a tag infót");
             } else {
                 Alert alert1 = new Alert(Alert.AlertType.ERROR);
                 alert1.setTitle("Hiba");
                 alert1.setHeaderText(null);
                 alert1.setContentText("Sikertelen a könyv kiadása");
                 alert1.showAndWait();
+                Logger.getLogger(MainKezelo.class.getName()).log(Level.INFO, "Nem sikerült lekérdezni a tag infót");
             }
         } else {
                 Alert alert1 = new Alert(Alert.AlertType.INFORMATION);
@@ -221,6 +224,7 @@ public class MainKezelo implements Initializable {
                 alert1.setHeaderText(null);
                 alert1.setContentText("A könyv kiadása megszakítva");
                 alert1.showAndWait();
+            Logger.getLogger(MainKezelo.class.getName()).log(Level.INFO, "Megszakítva");
         }
     }
     
@@ -307,14 +311,16 @@ public class MainKezelo implements Initializable {
             Alert alert1 = new Alert(Alert.AlertType.INFORMATION);
             alert1.setTitle("SIKERES");
             alert1.setHeaderText(null);
-            alert1.setContentText("A könyv visszavéve");
+            alert1.setContentText("Kiadás törölve");
             alert1.showAndWait();
+            Logger.getLogger(MainKezelo.class.getName()).log(Level.INFO, "Kiadás törölve");
         }else{
             Alert alert1 = new Alert(Alert.AlertType.ERROR);
             alert1.setTitle("SIKERTELEN");
             alert1.setHeaderText(null);
-            alert1.setContentText("A könyv visszahozása sikertelen");
+            alert1.setContentText("A könyv kiadásának törlése sikertelen");
             alert1.showAndWait();
+            Logger.getLogger(MainKezelo.class.getName()).log(Level.INFO, "Kiadás törlése sikertelen.");
             }
         }else {
             Alert alert1 = new Alert(Alert.AlertType.INFORMATION);
@@ -356,12 +362,14 @@ public class MainKezelo implements Initializable {
                 alert1.setHeaderText(null);
                 alert1.setContentText("A könyv megújítva");
                 alert1.showAndWait();
+                Logger.getLogger(MainKezelo.class.getName()).log(Level.INFO, "A könyv megújítása sikeres");
             } else {
                 Alert alert1 = new Alert(Alert.AlertType.ERROR);
             alert1.setTitle("SIKERTELEN");
             alert1.setHeaderText(null);
             alert1.setContentText("A könyv megújítása sikertelen");
             alert1.showAndWait();
+            Logger.getLogger(MainKezelo.class.getName()).log(Level.INFO, "A könyv megújítása sikertelen");
             }
         } else {
             Alert alert1 = new Alert(Alert.AlertType.INFORMATION);

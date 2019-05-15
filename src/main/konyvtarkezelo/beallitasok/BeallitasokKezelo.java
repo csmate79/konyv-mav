@@ -36,7 +36,7 @@ public class BeallitasokKezelo implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         initDefaultValues();
-    }    
+    }
 
     //A Mentés gomb
     @FXML
@@ -53,6 +53,8 @@ public class BeallitasokKezelo implements Initializable {
         preferences.setPassword(pass);
         
         Preferences.writePreferenceToFile(preferences);
+
+
     }
 
     //A bezárás gomb
@@ -68,5 +70,6 @@ public class BeallitasokKezelo implements Initializable {
         username.setText(String.valueOf(preferences.getUsername()));
         password.setText(String.valueOf(preferences.getPassword()));
     }
-    
+
+
 }

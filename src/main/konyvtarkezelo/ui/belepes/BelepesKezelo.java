@@ -21,6 +21,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import konyvtar.ui.addbook.View_2Controller;
 import konyvtarkezelo.beallitasok.Preferences;
 import konyvtarkezelo.ui.main.MainKezelo;
 
@@ -71,9 +72,14 @@ public class BelepesKezelo implements Initializable {
         if(uname.equals(preference.getUsername()) && pword.equals(preference.getPassword())){
             ((Stage)username.getScene().getWindow()).close();
             loadMain();
-        } else {
+            Logger.getLogger(BelepesKezelo.class.getName()).log(Level.INFO, "Sikerült belépni");
+        } else if (username != null && jelszo != null) {
+            titleLabel.setText("Töltsd ki a mezőket");
+            titleLabel.setStyle("-fx-background-color:#d32f2f"); //Ha sikertelen a belépés, akkor megváltozik a titleLabel színe pirosra.
+        }  else {
             titleLabel.setText("Hibás próbálkozás");
             titleLabel.setStyle("-fx-background-color:#d32f2f"); //Ha sikertelen a belépés, akkor megváltozik a titleLabel színe pirosra.
+            Logger.getLogger(BelepesKezelo.class.getName()).log(Level.INFO, "Sikerült a belépés");
         }
     }
 
@@ -93,7 +99,5 @@ public class BelepesKezelo implements Initializable {
         } catch (IOException ex) {
             Logger.getLogger(MainKezelo.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
     }
-    
 }

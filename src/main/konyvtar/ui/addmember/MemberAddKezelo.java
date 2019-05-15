@@ -10,6 +10,9 @@ import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -17,6 +20,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import konyvtar.database.AdatbazisKezelo;
+import konyvtarkezelo.ui.belepes.BelepesKezelo;
 
 /**
  * FXML Controller class
@@ -89,11 +93,13 @@ public class MemberAddKezelo implements Initializable {
             alert.setHeaderText(null);
             alert.setContentText("Mentve.");
             alert.showAndWait();
+            Logger.getLogger(MemberAddKezelo.class.getName()).log(Level.INFO, "Sikerült a tag felvétele");
         } else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
             alert.setContentText("ERROR");
             alert.showAndWait();
+            Logger.getLogger(BelepesKezelo.class.getName()).log(Level.INFO, "Nem sikerült a tag felvétele");
         }
     }
 }
