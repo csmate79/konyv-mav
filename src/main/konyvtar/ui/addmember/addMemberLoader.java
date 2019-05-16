@@ -20,7 +20,7 @@ public class addMemberLoader extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("../../../resources/add_member.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("add_member.fxml"));
         
         Scene scene = new Scene(root);
         
