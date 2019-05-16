@@ -110,13 +110,11 @@ public class View_2Controller implements Initializable {
             alert.setHeaderText(null);
             alert.setContentText("Sikeres");
             alert.showAndWait();
-            Logger.getLogger(View_2Controller.class.getName()).log(Level.INFO, "Sikerült a könyv felvétele");
         } else  { //error
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
             alert.setContentText("Nem sikerült");
             alert.showAndWait();
-            Logger.getLogger(View_2Controller.class.getName()).log(Level.INFO, "Nem sikerült");
         }
     }
     
