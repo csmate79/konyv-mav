@@ -7,7 +7,7 @@
 
 <AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="300.0" prefWidth="430.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="konyvtar.ui.addmember.MemberAddKezelo">
     <stylesheets>
-        <URL value="@konyvtar/ui/addmember/add_member.css" />
+        <URL value="@../../main/konyvtar/ui/addmember/add_member.css" />
     </stylesheets>
    <children>
       <VBox layoutX="210.0" layoutY="63.0" prefHeight="463.0" prefWidth="810.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -32,7 +32,7 @@
                   <Insets left="10.0" right="10.0" top="20.0" />
                </VBox.margin>
             </JFXTextField>
-            <HBox prefHeight="100.0" prefWidth="200.0" stylesheets="@konyvtar/ui/addbook/addbook.css">
+            <HBox prefHeight="100.0" prefWidth="200.0" stylesheets="@../../main/konyvtar/ui/addbook/addbook.css">
                <children>
                   <JFXButton fx:id="save" onAction="#addMember" prefHeight="133.0" prefWidth="352.0" text="Mentés">
                      <HBox.margin>

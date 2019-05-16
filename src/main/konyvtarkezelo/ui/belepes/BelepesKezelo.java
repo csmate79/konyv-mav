@@ -21,7 +21,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import konyvtar.ui.addbook.View_2Controller;
 import konyvtarkezelo.beallitasok.Preferences;
 import konyvtarkezelo.ui.main.MainKezelo;
 
@@ -91,7 +90,7 @@ public class BelepesKezelo implements Initializable {
     //Hova lépjen tovább. Ez van meghívva a loginButtAct-ban.
     void loadMain() {
         try {
-            Parent parent = FXMLLoader.load(getClass().getResource("/main.fxml"));
+            Parent parent = FXMLLoader.load(getClass().getResource("/fxml/main.fxml"));
             Stage stage = new Stage(StageStyle.DECORATED);
             stage.setTitle("Könyvtárkezelő");
             stage.setScene(new Scene(parent));

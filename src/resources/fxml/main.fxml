@@ -17,7 +17,7 @@
                      <graphic>
                         <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@konyvtarkezelo/ui/main/icons8-add-user-group-woman-man-30.png" />
+                              <Image url="@../../main/konyvtarkezelo/ui/main/icons8-add-user-group-woman-man-30.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -26,7 +26,7 @@
                      <graphic>
                         <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@konyvtarkezelo/ui/main/icons8-add-book-30.png" />
+                              <Image url="@../../main/konyvtarkezelo/ui/main/icons8-add-book-30.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -35,7 +35,7 @@
                      <graphic>
                         <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@konyvtarkezelo/ui/main/icons8-user-groups-filled-50.png" />
+                              <Image url="@../../main/konyvtarkezelo/ui/main/icons8-user-groups-filled-50.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -44,7 +44,7 @@
                      <graphic>
                         <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@konyvtarkezelo/ui/main/icons8-books-26.png" />
+                              <Image url="@../../main/konyvtarkezelo/ui/main/icons8-books-26.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -53,7 +53,7 @@
                      <graphic>
                         <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@konyvtarkezelo/ui/main/icons8-automatic-26.png" />
+                              <Image url="@../../main/konyvtarkezelo/ui/main/icons8-automatic-26.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -140,11 +140,11 @@
                                     </HBox>
                                     <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                                        <children>
-                                          <JFXButton onAction="#loadKiadOp" stylesheets="@konyvtarkezelo/ui/main/main.css" text="Kiad">
+                                          <JFXButton onAction="#loadKiadOp" stylesheets="@../../main/konyvtarkezelo/ui/main/main.css" text="Kiad">
                                              <graphic>
                                                 <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                                                    <image>
-                                                      <Image url="@konyvtarkezelo/ui/main/icons8-double-tick-20.png" />
+                                                      <Image url="@../../main/konyvtarkezelo/ui/main/icons8-double-tick-20.png" />
                                                    </image>
                                                 </ImageView>
                                              </graphic></JFXButton>
@@ -181,25 +181,25 @@
                                  <bottom>
                                     <HBox alignment="CENTER" prefHeight="78.0" prefWidth="481.0" BorderPane.alignment="CENTER">
                                        <children>
-                                          <JFXButton onAction="#loadMegujitOP" stylesheets="@konyvtarkezelo/ui/main/main.css" text="Megújít">
+                                          <JFXButton onAction="#loadMegujitOP" stylesheets="@../../main/konyvtarkezelo/ui/main/main.css" text="Megújít">
                                              <HBox.margin>
                                                 <Insets right="20.0" />
                                              </HBox.margin>
                                              <graphic>
                                                 <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                                                    <image>
-                                                      <Image url="@konyvtarkezelo/ui/main/icons8-renew-20.png" />
+                                                      <Image url="@../../main/konyvtarkezelo/ui/main/icons8-renew-20.png" />
                                                    </image>
                                                 </ImageView>
                                              </graphic></JFXButton>
-                                          <JFXButton layoutX="225.0" layoutY="37.0" onAction="#loadTorolOp" stylesheets="@konyvtarkezelo/ui/main/main.css" text="Töröl">
+                                          <JFXButton layoutX="225.0" layoutY="37.0" onAction="#loadTorolOp" stylesheets="@../../main/konyvtarkezelo/ui/main/main.css" text="Töröl">
                                              <HBox.margin>
                                                 <Insets left="20.0" />
                                              </HBox.margin>
                                              <graphic>
                                                 <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                                                    <image>
-                                                      <Image url="@konyvtarkezelo/ui/main/icons8-cancel-20.png" />
+                                                      <Image url="@../../main/konyvtarkezelo/ui/main/icons8-cancel-20.png" />
                                                    </image>
                                                 </ImageView>
                                              </graphic></JFXButton>

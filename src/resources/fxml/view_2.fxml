@@ -7,7 +7,7 @@
 
 <AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="287.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="konyvtar.ui.addbook.View_2Controller">
     <stylesheets>
-        <URL value="@konyvtar/ui/addbook/addbook.css" />
+        <URL value="@../../main/konyvtar/ui/addbook/addbook.css" />
     </stylesheets>
    <children>
       <VBox layoutX="200.0" layoutY="53.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">

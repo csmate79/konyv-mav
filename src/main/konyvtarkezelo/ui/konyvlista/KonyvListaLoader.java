@@ -13,7 +13,7 @@ public class KonyvListaLoader extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("../../../resources/konyv_lista.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/konyv_lista.fxml"));
         
         Scene scene = new Scene(root);
         

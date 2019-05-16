@@ -20,7 +20,7 @@ public class Konyvtar extends Application {
     //Itt adjuk meg a classnak, hogy melyik fxml fájlt nyissa meg.
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("view_2.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/view_2.fxml"));
         
         Scene scene = new Scene(root);
         

@@ -33,7 +33,6 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import konyvtar.database.AdatbazisKezelo;
-import konyvtarkezelo.ui.belepes.BelepesKezelo;
 
 /**
  * FXML Controller class
@@ -93,27 +92,27 @@ public class MainKezelo implements Initializable {
      */
     @FXML
     private void loadAddMember(ActionEvent event) {
-        loadWindow("/add_member.fxml", "Tag hozzáadás");
+        loadWindow("/fxml/add_member.fxml", "Tag hozzáadás");
     }
 
     @FXML
     private void loadAddBook(ActionEvent event) {
-        loadWindow("/view_2.fxml", "Könyv hozzáadás");
+        loadWindow("/fxml/view_2.fxml", "Könyv hozzáadás");
     }
 
     @FXML
     private void loadMemberList(ActionEvent event) {
-        loadWindow("/konyvtarkezelo/ui/memberlista/member_lista.fxml", "Tag hozzáadás");
+        loadWindow("/fxml/member_lista.fxml", "Tag hozzáadás");
     }
 
     @FXML
     private void loadBookList(ActionEvent event) {
-        loadWindow("/konyv_lista.fxml", "Tag hozzáadás");
+        loadWindow("/fxml/konyv_lista.fxml", "Tag hozzáadás");
     }
     
     @FXML
     private void loadSettings(ActionEvent event) {
-        loadWindow("/beallitasok.fxml", "Beallitasok");
+        loadWindow("/fxml/beallitasok.fxml", "Beallitasok");
     }
 
     void loadWindow(String loc, String title) {
